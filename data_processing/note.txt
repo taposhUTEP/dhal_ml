@@ -1,0 +1,20 @@
+>>> e-s
+datetime.timedelta(seconds=1580)
+>>> 1580/60.0
+26.333333333333332
+>>> total_pkts = 161000
+>>> total_pkts/1580.0
+101.89873417721519
+>>> 
+>>> per_sec_pkts = total_pkts/1580.0
+>>> per_iter_pkts = total_pkts/2880
+>>> per_iter_time = 1580/2880.0
+>>> 
+>>> per_sec_pkts
+101.89873417721519
+>>> per_iter_pkts 
+55.90277777777778
+>>> per_iter_time
+0.5486111111111112
+
+

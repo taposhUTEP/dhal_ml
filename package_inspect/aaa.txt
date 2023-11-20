@@ -1,0 +1,3761 @@
+taposh 2
+###[ Ethernet ]### 
+  dst       = 33:33:00:00:00:16
+  src       = 1a:6c:79:ac:5a:69
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 0
+     plen      = 36
+     nh        = Hop-by-Hop Option Header
+     hlim      = 1
+     src       = fe80::186c:79ff:feac:5a69
+     dst       = ff02::16
+###[ IPv6 Extension Header - Hop-by-Hop Options Header ]### 
+        nh        = ICMPv6
+        len       = 0
+        autopad   = On
+        \options   \
+         |###[ Router Alert ]### 
+         |  otype     = Router Alert [00: skip, 0: Don't change en-route]
+         |  optlen    = 2
+         |  value     = Datagram contains a MLD message
+         |###[ PadN ]### 
+         |  otype     = PadN [00: skip, 0: Don't change en-route]
+         |  optlen    = 0
+         |  optdata   = ''
+###[ MLDv2 - Multicast Listener Report ]### 
+           type      = MLD Report Version 2
+           res       = 0
+           cksum     = 0x2a72
+           reserved  = 0
+           records_number= 1
+           \records   \
+            |###[ ICMPv6 MLDv2 - Multicast Address Record ]### 
+            |  rtype     = 4
+            |  auxdata_len= 0
+            |  sources_number= 0
+            |  dst       = ff02::1:ffac:5a69
+            |  sources   = [  ]
+            |  auxdata   = ''
+
+taposh 3
+###[ Ethernet ]### 
+  dst       = 33:33:00:00:00:02
+  src       = 1a:6c:79:ac:5a:69
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 0
+     plen      = 16
+     nh        = ICMPv6
+     hlim      = 255
+     src       = fe80::186c:79ff:feac:5a69
+     dst       = ff02::2
+###[ ICMPv6 Neighbor Discovery - Router Solicitation ]### 
+        type      = Router Solicitation
+        code      = 0
+        cksum     = 0xa22a
+        res       = 0
+###[ ICMPv6 Neighbor Discovery Option - Source Link-Layer Address ]### 
+           type      = 1
+           len       = 1
+           lladdr    = 1a:6c:79:ac:5a:69
+
+taposh 4
+###[ Ethernet ]### 
+  dst       = 33:33:00:00:00:16
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 0
+     plen      = 36
+     nh        = Hop-by-Hop Option Header
+     hlim      = 1
+     src       = fe80::a8bb:ccff:fedd:202
+     dst       = ff02::16
+###[ IPv6 Extension Header - Hop-by-Hop Options Header ]### 
+        nh        = ICMPv6
+        len       = 0
+        autopad   = On
+        \options   \
+         |###[ Router Alert ]### 
+         |  otype     = Router Alert [00: skip, 0: Don't change en-route]
+         |  optlen    = 2
+         |  value     = Datagram contains a MLD message
+         |###[ PadN ]### 
+         |  otype     = PadN [00: skip, 0: Don't change en-route]
+         |  optlen    = 0
+         |  optdata   = ''
+###[ MLDv2 - Multicast Listener Report ]### 
+           type      = MLD Report Version 2
+           res       = 0
+           cksum     = 0xf78e
+           reserved  = 0
+           records_number= 1
+           \records   \
+            |###[ ICMPv6 MLDv2 - Multicast Address Record ]### 
+            |  rtype     = 4
+            |  auxdata_len= 0
+            |  sources_number= 0
+            |  dst       = ff02::1:ffdd:202
+            |  sources   = [  ]
+            |  auxdata   = ''
+
+taposh 5
+###[ Ethernet ]### 
+  dst       = 33:33:00:00:00:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 0
+     plen      = 16
+     nh        = ICMPv6
+     hlim      = 255
+     src       = fe80::a8bb:ccff:fedd:202
+     dst       = ff02::2
+###[ ICMPv6 Neighbor Discovery - Router Solicitation ]### 
+        type      = Router Solicitation
+        code      = 0
+        cksum     = 0x8bf7
+        res       = 0
+###[ ICMPv6 Neighbor Discovery Option - Source Link-Layer Address ]### 
+           type      = 1
+           len       = 1
+           lladdr    = aa:bb:cc:dd:02:02
+
+taposh 6
+###[ Ethernet ]### 
+  dst       = 33:33:00:00:00:16
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 0
+     plen      = 36
+     nh        = Hop-by-Hop Option Header
+     hlim      = 1
+     src       = fe80::a8bb:ccff:fedd:302
+     dst       = ff02::16
+###[ IPv6 Extension Header - Hop-by-Hop Options Header ]### 
+        nh        = ICMPv6
+        len       = 0
+        autopad   = On
+        \options   \
+         |###[ Router Alert ]### 
+         |  otype     = Router Alert [00: skip, 0: Don't change en-route]
+         |  optlen    = 2
+         |  value     = Datagram contains a MLD message
+         |###[ PadN ]### 
+         |  otype     = PadN [00: skip, 0: Don't change en-route]
+         |  optlen    = 0
+         |  optdata   = ''
+###[ MLDv2 - Multicast Listener Report ]### 
+           type      = MLD Report Version 2
+           res       = 0
+           cksum     = 0xf58e
+           reserved  = 0
+           records_number= 1
+           \records   \
+            |###[ ICMPv6 MLDv2 - Multicast Address Record ]### 
+            |  rtype     = 4
+            |  auxdata_len= 0
+            |  sources_number= 0
+            |  dst       = ff02::1:ffdd:302
+            |  sources   = [  ]
+            |  auxdata   = ''
+
+taposh 7
+###[ Ethernet ]### 
+  dst       = 33:33:00:00:00:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 0
+     plen      = 16
+     nh        = ICMPv6
+     hlim      = 255
+     src       = fe80::a8bb:ccff:fedd:302
+     dst       = ff02::2
+###[ ICMPv6 Neighbor Discovery - Router Solicitation ]### 
+        type      = Router Solicitation
+        code      = 0
+        cksum     = 0x89f7
+        res       = 0
+###[ ICMPv6 Neighbor Discovery Option - Source Link-Layer Address ]### 
+           type      = 1
+           len       = 1
+           lladdr    = aa:bb:cc:dd:03:02
+
+taposh 8
+###[ Ethernet ]### 
+  dst       = 33:33:00:00:00:16
+  src       = 1a:6c:79:ac:5a:69
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 0
+     plen      = 36
+     nh        = Hop-by-Hop Option Header
+     hlim      = 1
+     src       = fe80::186c:79ff:feac:5a69
+     dst       = ff02::16
+###[ IPv6 Extension Header - Hop-by-Hop Options Header ]### 
+        nh        = ICMPv6
+        len       = 0
+        autopad   = On
+        \options   \
+         |###[ Router Alert ]### 
+         |  otype     = Router Alert [00: skip, 0: Don't change en-route]
+         |  optlen    = 2
+         |  value     = Datagram contains a MLD message
+         |###[ PadN ]### 
+         |  otype     = PadN [00: skip, 0: Don't change en-route]
+         |  optlen    = 0
+         |  optdata   = ''
+###[ MLDv2 - Multicast Listener Report ]### 
+           type      = MLD Report Version 2
+           res       = 0
+           cksum     = 0x2a72
+           reserved  = 0
+           records_number= 1
+           \records   \
+            |###[ ICMPv6 MLDv2 - Multicast Address Record ]### 
+            |  rtype     = 4
+            |  auxdata_len= 0
+            |  sources_number= 0
+            |  dst       = ff02::1:ffac:5a69
+            |  sources   = [  ]
+            |  auxdata   = ''
+
+taposh 9
+###[ Ethernet ]### 
+  dst       = 33:33:00:00:00:16
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 0
+     plen      = 36
+     nh        = Hop-by-Hop Option Header
+     hlim      = 1
+     src       = fe80::a8bb:ccff:fedd:302
+     dst       = ff02::16
+###[ IPv6 Extension Header - Hop-by-Hop Options Header ]### 
+        nh        = ICMPv6
+        len       = 0
+        autopad   = On
+        \options   \
+         |###[ Router Alert ]### 
+         |  otype     = Router Alert [00: skip, 0: Don't change en-route]
+         |  optlen    = 2
+         |  value     = Datagram contains a MLD message
+         |###[ PadN ]### 
+         |  otype     = PadN [00: skip, 0: Don't change en-route]
+         |  optlen    = 0
+         |  optdata   = ''
+###[ MLDv2 - Multicast Listener Report ]### 
+           type      = MLD Report Version 2
+           res       = 0
+           cksum     = 0xf58e
+           reserved  = 0
+           records_number= 1
+           \records   \
+            |###[ ICMPv6 MLDv2 - Multicast Address Record ]### 
+            |  rtype     = 4
+            |  auxdata_len= 0
+            |  sources_number= 0
+            |  dst       = ff02::1:ffdd:302
+            |  sources   = [  ]
+            |  auxdata   = ''
+
+taposh 10
+###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = aa:bb:cc:dd:02:02
+  type      = ARP
+###[ ARP ]### 
+     hwtype    = Ethernet (10Mb)
+     ptype     = IPv4
+     hwlen     = 6
+     plen      = 4
+     op        = who-has
+     hwsrc     = aa:bb:cc:dd:02:02
+     psrc      = 192.168.1.1
+     hwdst     = 00:00:00:00:00:00
+     pdst      = 192.168.1.254
+
+taposh 11
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = ARP
+###[ ARP ]### 
+     hwtype    = Ethernet (10Mb)
+     ptype     = IPv4
+     hwlen     = 6
+     plen      = 4
+     op        = is-at
+     hwsrc     = aa:bb:cc:dd:03:02
+     psrc      = 192.168.1.254
+     hwdst     = aa:bb:cc:dd:02:02
+     pdst      = 192.168.1.1
+
+taposh 12
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 353
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x69b1
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40038
+        dport     = EtherNet_IP_2
+        seq       = 2127097941
+        ack       = 0
+        dataofs   = 10
+        reserved  = 0
+        flags     = S
+        window    = 42340
+        chksum    = 0xcfd8
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (3978091277, 0)), ('NOP', None), ('WScale', 9)]
+
+taposh 13
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 0
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x6e12
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40038
+        seq       = 1593332535
+        ack       = 2127097942
+        dataofs   = 10
+        reserved  = 0
+        flags     = SA
+        window    = 43440
+        chksum    = 0x5b6d
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (998179508, 3978091277)), ('NOP', None), ('WScale', 9)]
+
+taposh 14
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 354
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x69b8
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40038
+        dport     = EtherNet_IP_2
+        seq       = 2127097942
+        ack       = 1593332536
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091280, 998179508))]
+
+taposh 15
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 355
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x699b
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40038
+        dport     = EtherNet_IP_2
+        seq       = 2127097942
+        ack       = 1593332536
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xcfec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091308, 998179508))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 0
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 16
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 20110
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x1f8c
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40038
+        seq       = 1593332536
+        ack       = 2127097970
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0x3340
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179536, 3978091308))]
+
+taposh 17
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 20111
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x1f6f
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40038
+        seq       = 1593332536
+        ack       = 2127097970
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xcfec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179538, 3978091308))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 2218515227
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 18
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 356
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x69b6
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40038
+        dport     = EtherNet_IP_2
+        seq       = 2127097970
+        ack       = 1593332564
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091310, 998179538))]
+
+taposh 19
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 118
+     id        = 357
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x6973
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40038
+        dport     = EtherNet_IP_2
+        seq       = 2127097970
+        ack       = 1593332564
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xd012
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091313, 998179538))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 42
+           session   = 2218515227
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 26
+               |###[ CIP ]### 
+               |     direction = request
+               |     service   = Read_Tag_Fragmented_Service
+               |     \path      \
+               |     \status    \
+               |###[ CIP_ReqConnectionManager ]### 
+               |        reserved  = 0
+               |        priority  = 0
+               |        ticktime  = 2
+               |        timeout_ticks= 32
+               |        message_size= 9222
+               |        \message   \
+               |         |###[ CIP ]### 
+               |         |  direction = request
+               |         |  service   = Get_Attribute_All
+               |         |  \path      \
+               |         |  \status    \
+               |         |###[ Raw ]### 
+               |         |     load      = '\x05\\x9d\x0c\x00L\x04\\x91\x05T42:1\x00\x01\x00\x01\x00\x01\x00'
+               |        message_padding= None
+               |        route_path_size= 1
+               |        reserved2 = 0
+               |        route_path_size_port= 1
+               |        route_path_size_addr= 0
+
+taposh 20
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 20112
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x1f8a
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40038
+        seq       = 1593332564
+        ack       = 2127098036
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179541, 3978091313))]
+
+taposh 21
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 102
+     id        = 20113
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x1f57
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40038
+        seq       = 1593332564
+        ack       = 2127098036
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xd002
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179551, 3978091313))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 26
+           session   = 2218515227
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 10
+               |###[ CIP ]### 
+               |     direction = response
+               |     service   = Read_Tag_Service
+               |     \path      \
+               |     \status    \
+               |###[ Raw ]### 
+               |        load      = '\x00\x00\x00\\xca\x00\\x96CC@'
+
+taposh 22
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 358
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x69b4
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40038
+        dport     = EtherNet_IP_2
+        seq       = 2127098036
+        ack       = 1593332614
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091323, 998179551))]
+
+taposh 23
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 359
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x69b3
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40038
+        dport     = EtherNet_IP_2
+        seq       = 2127098036
+        ack       = 1593332614
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091329, 998179551))]
+
+taposh 24
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 20114
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x1f88
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40038
+        seq       = 1593332614
+        ack       = 2127098037
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 85
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179558, 3978091329))]
+
+taposh 25
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 360
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x69b2
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40038
+        dport     = EtherNet_IP_2
+        seq       = 2127098037
+        ack       = 1593332615
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091330, 998179558))]
+
+taposh 26
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 12797
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x3a15
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60274
+        dport     = EtherNet_IP_2
+        seq       = 4012117886
+        ack       = 0
+        dataofs   = 10
+        reserved  = 0
+        flags     = S
+        window    = 42340
+        chksum    = 0xced8
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (1534345970, 0)), ('NOP', None), ('WScale', 9)]
+
+taposh 27
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 0
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x6f12
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60274
+        seq       = 3435899980
+        ack       = 4012117887
+        dataofs   = 10
+        reserved  = 0
+        flags     = SA
+        window    = 43440
+        chksum    = 0xe00c
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (998179679, 1534345970)), ('NOP', None), ('WScale', 9)]
+
+taposh 28
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 12798
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x3a1c
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60274
+        dport     = EtherNet_IP_2
+        seq       = 4012117887
+        ack       = 3435899981
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534345972, 998179679))]
+
+taposh 29
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 12799
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x39ff
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60274
+        dport     = EtherNet_IP_2
+        seq       = 4012117887
+        ack       = 3435899981
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xceec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534345989, 998179679))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 0
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 30
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 33333
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xece4
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60274
+        seq       = 3435899981
+        ack       = 4012117915
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0xb7f6
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179696, 1534345989))]
+
+taposh 31
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 33334
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xecc7
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60274
+        seq       = 3435899981
+        ack       = 4012117915
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xceec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179698, 1534345989))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 4230025745
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 32
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 12800
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x3a1a
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60274
+        dport     = EtherNet_IP_2
+        seq       = 4012117915
+        ack       = 3435900009
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534345991, 998179698))]
+
+taposh 33
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 118
+     id        = 12801
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x39d7
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60274
+        dport     = EtherNet_IP_2
+        seq       = 4012117915
+        ack       = 3435900009
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xcf12
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534345993, 998179698))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 42
+           session   = 4230025745
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 26
+               |###[ CIP ]### 
+               |     direction = request
+               |     service   = Read_Tag_Fragmented_Service
+               |     \path      \
+               |     \status    \
+               |###[ CIP_ReqConnectionManager ]### 
+               |        reserved  = 0
+               |        priority  = 0
+               |        ticktime  = 2
+               |        timeout_ticks= 32
+               |        message_size= 9222
+               |        \message   \
+               |         |###[ CIP ]### 
+               |         |  direction = request
+               |         |  service   = Get_Attribute_All
+               |         |  \path      \
+               |         |  \status    \
+               |         |###[ Raw ]### 
+               |         |     load      = '\x05\\x9d\x0c\x00L\x04\\x91\x05T41:1\x00\x01\x00\x01\x00\x01\x00'
+               |        message_padding= None
+               |        route_path_size= 1
+               |        reserved2 = 0
+               |        route_path_size_port= 1
+               |        route_path_size_addr= 0
+
+taposh 34
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 33335
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xece2
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60274
+        seq       = 3435900009
+        ack       = 4012117981
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179700, 1534345993))]
+
+taposh 35
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 102
+     id        = 33336
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xecaf
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60274
+        seq       = 3435900009
+        ack       = 4012117981
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xcf02
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179710, 1534345993))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 26
+           session   = 4230025745
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 10
+               |###[ CIP ]### 
+               |     direction = response
+               |     service   = Read_Tag_Service
+               |     \path      \
+               |     \status    \
+               |###[ Raw ]### 
+               |        load      = '\x00\x00\x00\\xca\x00\\x96CC@'
+
+taposh 36
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 12802
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x3a18
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60274
+        dport     = EtherNet_IP_2
+        seq       = 4012117981
+        ack       = 3435900059
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534346003, 998179710))]
+
+taposh 37
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 12803
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x3a17
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60274
+        dport     = EtherNet_IP_2
+        seq       = 4012117981
+        ack       = 3435900059
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 83
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534346007, 998179710))]
+
+taposh 38
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 33337
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xece0
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60274
+        seq       = 3435900059
+        ack       = 4012117982
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 85
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179715, 1534346007))]
+
+taposh 39
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 12804
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x3a16
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60274
+        dport     = EtherNet_IP_2
+        seq       = 4012117982
+        ack       = 3435900060
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534346008, 998179715))]
+
+taposh 40
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 6200
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52da
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40046
+        dport     = EtherNet_IP_2
+        seq       = 3650695114
+        ack       = 0
+        dataofs   = 10
+        reserved  = 0
+        flags     = S
+        window    = 42340
+        chksum    = 0xcfd8
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (3978091604, 0)), ('NOP', None), ('WScale', 9)]
+
+taposh 41
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 0
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x6e12
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40046
+        seq       = 218965810
+        ack       = 3650695115
+        dataofs   = 10
+        reserved  = 0
+        flags     = SA
+        window    = 43440
+        chksum    = 0x3c84
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (998179833, 3978091604)), ('NOP', None), ('WScale', 9)]
+
+taposh 42
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 6201
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52e1
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40046
+        dport     = EtherNet_IP_2
+        seq       = 3650695115
+        ack       = 218965811
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091606, 998179833))]
+
+taposh 43
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 6202
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52c4
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40046
+        dport     = EtherNet_IP_2
+        seq       = 3650695115
+        ack       = 218965811
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xcfec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091633, 998179833))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 0
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 44
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 11870
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x3fbc
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40046
+        seq       = 218965811
+        ack       = 3650695143
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0x1459
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179861, 3978091633))]
+
+taposh 45
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 11871
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x3f9f
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40046
+        seq       = 218965811
+        ack       = 3650695143
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xcfec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179864, 3978091633))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 2641395496
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 46
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 6203
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52df
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40046
+        dport     = EtherNet_IP_2
+        seq       = 3650695143
+        ack       = 218965839
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091636, 998179864))]
+
+taposh 47
+###[ Ethernet ]### 
+  dst       = 33:33:00:00:00:16
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 0
+     plen      = 36
+     nh        = Hop-by-Hop Option Header
+     hlim      = 1
+     src       = fe80::a8bb:ccff:fedd:202
+     dst       = ff02::16
+###[ IPv6 Extension Header - Hop-by-Hop Options Header ]### 
+        nh        = ICMPv6
+        len       = 0
+        autopad   = On
+        \options   \
+         |###[ Router Alert ]### 
+         |  otype     = Router Alert [00: skip, 0: Don't change en-route]
+         |  optlen    = 2
+         |  value     = Datagram contains a MLD message
+         |###[ PadN ]### 
+         |  otype     = PadN [00: skip, 0: Don't change en-route]
+         |  optlen    = 0
+         |  optdata   = ''
+###[ MLDv2 - Multicast Listener Report ]### 
+           type      = MLD Report Version 2
+           res       = 0
+           cksum     = 0xf78e
+           reserved  = 0
+           records_number= 1
+           \records   \
+            |###[ ICMPv6 MLDv2 - Multicast Address Record ]### 
+            |  rtype     = 4
+            |  auxdata_len= 0
+            |  sources_number= 0
+            |  dst       = ff02::1:ffdd:202
+            |  sources   = [  ]
+            |  auxdata   = ''
+
+taposh 48
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 118
+     id        = 6204
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x529c
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40046
+        dport     = EtherNet_IP_2
+        seq       = 3650695143
+        ack       = 218965839
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xd012
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091639, 998179864))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 42
+           session   = 2641395496
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 26
+               |###[ CIP ]### 
+               |     direction = request
+               |     service   = Read_Tag_Fragmented_Service
+               |     \path      \
+               |     \status    \
+               |###[ CIP_ReqConnectionManager ]### 
+               |        reserved  = 0
+               |        priority  = 0
+               |        ticktime  = 2
+               |        timeout_ticks= 32
+               |        message_size= 9222
+               |        \message   \
+               |         |###[ CIP ]### 
+               |         |  direction = request
+               |         |  service   = Get_Attribute_All
+               |         |  \path      \
+               |         |  \status    \
+               |         |###[ Raw ]### 
+               |         |     load      = '\x05\\x9d\x0c\x00L\x04\\x91\x05T42:1\x00\x01\x00\x01\x00\x01\x00'
+               |        message_padding= None
+               |        route_path_size= 1
+               |        reserved2 = 0
+               |        route_path_size_port= 1
+               |        route_path_size_addr= 0
+
+taposh 49
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 11872
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x3fba
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40046
+        seq       = 218965839
+        ack       = 3650695209
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179867, 3978091639))]
+
+taposh 50
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 102
+     id        = 11873
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x3f87
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40046
+        seq       = 218965839
+        ack       = 3650695209
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xd002
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179879, 3978091639))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 26
+           session   = 2641395496
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 10
+               |###[ CIP ]### 
+               |     direction = response
+               |     service   = Read_Tag_Service
+               |     \path      \
+               |     \status    \
+               |###[ Raw ]### 
+               |        load      = '\x00\x00\x00\\xca\x00\\x96CC@'
+
+taposh 51
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 6205
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52dd
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40046
+        dport     = EtherNet_IP_2
+        seq       = 3650695209
+        ack       = 218965889
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091651, 998179879))]
+
+taposh 52
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 6206
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52dc
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40046
+        dport     = EtherNet_IP_2
+        seq       = 3650695209
+        ack       = 218965889
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091657, 998179879))]
+
+taposh 53
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 11874
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x3fb8
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40046
+        seq       = 218965889
+        ack       = 3650695210
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 85
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998179885, 3978091657))]
+
+taposh 54
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 6207
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52db
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40046
+        dport     = EtherNet_IP_2
+        seq       = 3650695210
+        ack       = 218965890
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978091657, 998179885))]
+
+taposh 55
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 47152
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xb3e1
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60282
+        dport     = EtherNet_IP_2
+        seq       = 2195365233
+        ack       = 0
+        dataofs   = 10
+        reserved  = 0
+        flags     = S
+        window    = 42340
+        chksum    = 0xced8
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (1534346401, 0)), ('NOP', None), ('WScale', 9)]
+
+taposh 56
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 0
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x6f12
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60282
+        seq       = 1533838133
+        ack       = 2195365234
+        dataofs   = 10
+        reserved  = 0
+        flags     = SA
+        window    = 43440
+        chksum    = 0x5575
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (998180109, 1534346401)), ('NOP', None), ('WScale', 9)]
+
+taposh 57
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 47153
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xb3e8
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60282
+        dport     = EtherNet_IP_2
+        seq       = 2195365234
+        ack       = 1533838134
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534346403, 998180109))]
+
+taposh 58
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 47154
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xb3cb
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60282
+        dport     = EtherNet_IP_2
+        seq       = 2195365234
+        ack       = 1533838134
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xceec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534346419, 998180109))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 0
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 59
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 42508
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xc90d
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60282
+        seq       = 1533838134
+        ack       = 2195365262
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0x2d60
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180126, 1534346419))]
+
+taposh 60
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 52129
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xa570
+     src       = 10.0.1.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60718
+        dport     = EtherNet_IP_2
+        seq       = 3597615762
+        ack       = 0
+        dataofs   = 10
+        reserved  = 0
+        flags     = S
+        window    = 42340
+        chksum    = 0xe00c
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (998180128, 0)), ('NOP', None), ('WScale', 9)]
+
+taposh 61
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 0
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x6e12
+     src       = 192.168.1.1
+     dst       = 10.0.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60718
+        seq       = 3254444010
+        ack       = 3597615763
+        dataofs   = 10
+        reserved  = 0
+        flags     = SA
+        window    = 43440
+        chksum    = 0xccd8
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (437368608, 998180128)), ('NOP', None), ('WScale', 9)]
+
+taposh 62
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 42509
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xc8f0
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60282
+        seq       = 1533838134
+        ack       = 2195365262
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xceec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180129, 1534346419))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 3067810004
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 63
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 47155
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xb3e6
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60282
+        dport     = EtherNet_IP_2
+        seq       = 2195365262
+        ack       = 1533838162
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534346422, 998180129))]
+
+taposh 64
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 52130
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xa577
+     src       = 10.0.1.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60718
+        dport     = EtherNet_IP_2
+        seq       = 3597615763
+        ack       = 3254444011
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0x40c2
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180130, 437368608))]
+
+taposh 65
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 118
+     id        = 47156
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xb3a3
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60282
+        dport     = EtherNet_IP_2
+        seq       = 2195365262
+        ack       = 1533838162
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xcf12
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534346424, 998180129))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 42
+           session   = 3067810004
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 26
+               |###[ CIP ]### 
+               |     direction = request
+               |     service   = Read_Tag_Fragmented_Service
+               |     \path      \
+               |     \status    \
+               |###[ CIP_ReqConnectionManager ]### 
+               |        reserved  = 0
+               |        priority  = 0
+               |        ticktime  = 2
+               |        timeout_ticks= 32
+               |        message_size= 9222
+               |        \message   \
+               |         |###[ CIP ]### 
+               |         |  direction = request
+               |         |  service   = Get_Attribute_All
+               |         |  \path      \
+               |         |  \status    \
+               |         |###[ Raw ]### 
+               |         |     load      = '\x05\\x9d\x0c\x00L\x04\\x91\x05T41:1\x00\x01\x00\x01\x00\x01\x00'
+               |        message_padding= None
+               |        route_path_size= 1
+               |        reserved2 = 0
+               |        route_path_size_port= 1
+               |        route_path_size_addr= 0
+
+taposh 66
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 42510
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xc90b
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60282
+        seq       = 1533838162
+        ack       = 2195365328
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180132, 1534346424))]
+
+taposh 67
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 102
+     id        = 42511
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xc8d8
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60282
+        seq       = 1533838162
+        ack       = 2195365328
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xcf02
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180142, 1534346424))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 26
+           session   = 3067810004
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 10
+               |###[ CIP ]### 
+               |     direction = response
+               |     service   = Read_Tag_Service
+               |     \path      \
+               |     \status    \
+               |###[ Raw ]### 
+               |        load      = '\x00\x00\x00\\xca\x00\\x96CC@'
+
+taposh 68
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 47157
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xb3e4
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60282
+        dport     = EtherNet_IP_2
+        seq       = 2195365328
+        ack       = 1533838212
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534346435, 998180142))]
+
+taposh 69
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 52131
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xa55a
+     src       = 10.0.1.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60718
+        dport     = EtherNet_IP_2
+        seq       = 3597615763
+        ack       = 3254444011
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xccec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180146, 437368608))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 0
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 70
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 6943
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52fb
+     src       = 192.168.1.1
+     dst       = 10.0.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60718
+        seq       = 3254444011
+        ack       = 3597615791
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0xccd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (437368625, 998180146))]
+
+taposh 71
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 47158
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xb3e3
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60282
+        dport     = EtherNet_IP_2
+        seq       = 2195365328
+        ack       = 1533838212
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 83
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534346441, 998180142))]
+
+taposh 72
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 42512
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xc909
+     src       = 10.0.3.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60282
+        seq       = 1533838212
+        ack       = 2195365329
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 85
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180148, 1534346441))]
+
+taposh 73
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 47159
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xb3e2
+     src       = 192.168.1.1
+     dst       = 10.0.3.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60282
+        dport     = EtherNet_IP_2
+        seq       = 2195365329
+        ack       = 1533838213
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xced0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1534346441, 998180148))]
+
+taposh 74
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 6944
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52de
+     src       = 192.168.1.1
+     dst       = 10.0.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60718
+        seq       = 3254444011
+        ack       = 3597615791
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xccec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (437368627, 998180146))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 3350374844
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 75
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 52132
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xa575
+     src       = 10.0.1.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60718
+        dport     = EtherNet_IP_2
+        seq       = 3597615791
+        ack       = 3254444039
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xccd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180148, 437368627))]
+
+taposh 76
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 118
+     id        = 52133
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xa532
+     src       = 10.0.1.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60718
+        dport     = EtherNet_IP_2
+        seq       = 3597615791
+        ack       = 3254444039
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xcd12
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180150, 437368627))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 42
+           session   = 3350374844
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 26
+               |###[ CIP ]### 
+               |     direction = request
+               |     service   = Read_Tag_Fragmented_Service
+               |     \path      \
+               |     \status    \
+               |###[ CIP_ReqConnectionManager ]### 
+               |        reserved  = 0
+               |        priority  = 0
+               |        ticktime  = 2
+               |        timeout_ticks= 32
+               |        message_size= 9222
+               |        \message   \
+               |         |###[ CIP ]### 
+               |         |  direction = request
+               |         |  service   = Get_Attribute_All
+               |         |  \path      \
+               |         |  \status    \
+               |         |###[ Raw ]### 
+               |         |     load      = '\x05\\x9d\x0c\x00L\x04\\x91\x05P78:1\x00\x01\x00\x01\x00\x01\x00'
+               |        message_padding= None
+               |        route_path_size= 1
+               |        reserved2 = 0
+               |        route_path_size_port= 1
+               |        route_path_size_addr= 0
+
+taposh 77
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 6945
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52f9
+     src       = 192.168.1.1
+     dst       = 10.0.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60718
+        seq       = 3254444039
+        ack       = 3597615857
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0xccd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (437368629, 998180150))]
+
+taposh 78
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 118
+     id        = 52134
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xa531
+     src       = 10.0.1.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60718
+        dport     = EtherNet_IP_2
+        seq       = 3597615857
+        ack       = 3254444039
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xcd12
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180150, 437368629))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 42
+           session   = 3350374844
+           status    = success
+           sender_context= 49
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 26
+               |###[ CIP ]### 
+               |     direction = request
+               |     service   = Read_Tag_Fragmented_Service
+               |     \path      \
+               |     \status    \
+               |###[ CIP_ReqConnectionManager ]### 
+               |        reserved  = 0
+               |        priority  = 0
+               |        ticktime  = 2
+               |        timeout_ticks= 32
+               |        message_size= 9222
+               |        \message   \
+               |         |###[ CIP ]### 
+               |         |  direction = request
+               |         |  service   = Get_Attribute_All
+               |         |  \path      \
+               |         |  \status    \
+               |         |###[ Raw ]### 
+               |         |     load      = '\x05\\x9d\x0c\x00L\x04\\x91\x05P79:1\x00\x01\x00\x01\x00\x01\x00'
+               |        message_padding= None
+               |        route_path_size= 1
+               |        reserved2 = 0
+               |        route_path_size_port= 1
+               |        route_path_size_addr= 0
+
+taposh 79
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 6946
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52f8
+     src       = 192.168.1.1
+     dst       = 10.0.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60718
+        seq       = 3254444039
+        ack       = 3597615923
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0xccd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (437368629, 998180150))]
+
+taposh 80
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 102
+     id        = 6947
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52c5
+     src       = 192.168.1.1
+     dst       = 10.0.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60718
+        seq       = 3254444039
+        ack       = 3597615923
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xcd02
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (437368637, 998180150))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 26
+           session   = 3350374844
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 10
+               |###[ CIP ]### 
+               |     direction = response
+               |     service   = Read_Tag_Service
+               |     \path      \
+               |     \status    \
+               |###[ Raw ]### 
+               |        load      = '\x00\x00\x00\\xca\x00\x00\x00\\x80?'
+
+taposh 81
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 52135
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xa572
+     src       = 10.0.1.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60718
+        dport     = EtherNet_IP_2
+        seq       = 3597615923
+        ack       = 3254444089
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xccd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180158, 437368637))]
+
+taposh 82
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 102
+     id        = 6948
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52c4
+     src       = 192.168.1.1
+     dst       = 10.0.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60718
+        seq       = 3254444089
+        ack       = 3597615923
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xcd02
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (437368644, 998180158))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 26
+           session   = 3350374844
+           status    = success
+           sender_context= 49
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 10
+               |###[ CIP ]### 
+               |     direction = response
+               |     service   = Read_Tag_Service
+               |     \path      \
+               |     \status    \
+               |###[ Raw ]### 
+               |        load      = '\x00\x00\x00\\xca\x00\x00\x00\\x80?'
+
+taposh 83
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 52136
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xa571
+     src       = 10.0.1.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60718
+        dport     = EtherNet_IP_2
+        seq       = 3597615923
+        ack       = 3254444139
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xccd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180165, 437368644))]
+
+taposh 84
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 52137
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xa570
+     src       = 10.0.1.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60718
+        dport     = EtherNet_IP_2
+        seq       = 3597615923
+        ack       = 3254444139
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 83
+        chksum    = 0xccd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180170, 437368644))]
+
+taposh 85
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 6949
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x52f5
+     src       = 192.168.1.1
+     dst       = 10.0.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 60718
+        seq       = 3254444139
+        ack       = 3597615924
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 85
+        chksum    = 0xccd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (437368649, 998180170))]
+
+taposh 86
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 52138
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0xa56f
+     src       = 10.0.1.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = 60718
+        dport     = EtherNet_IP_2
+        seq       = 3597615924
+        ack       = 3254444140
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xccd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180170, 437368649))]
+
+taposh 87
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 44931
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xbb8e
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40056
+        dport     = EtherNet_IP_2
+        seq       = 2728475371
+        ack       = 0
+        dataofs   = 10
+        reserved  = 0
+        flags     = S
+        window    = 42340
+        chksum    = 0xcfd8
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (3978092010, 0)), ('NOP', None), ('WScale', 9)]
+
+taposh 88
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 60
+     id        = 0
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x6e12
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40056
+        seq       = 2407433225
+        ack       = 2728475372
+        dataofs   = 10
+        reserved  = 0
+        flags     = SA
+        window    = 43440
+        chksum    = 0x85dc
+        urgptr    = 0
+        options   = [('MSS', 1460), ('SAckOK', b''), ('Timestamp', (998180239, 3978092010)), ('NOP', None), ('WScale', 9)]
+
+taposh 89
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 44932
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xbb95
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40056
+        dport     = EtherNet_IP_2
+        seq       = 2728475372
+        ack       = 2407433226
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978092012, 998180239))]
+
+taposh 90
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 44933
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xbb78
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40056
+        dport     = EtherNet_IP_2
+        seq       = 2728475372
+        ack       = 2407433226
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xcfec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978092028, 998180239))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 0
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 91
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 60049
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x8388
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40056
+        seq       = 2407433226
+        ack       = 2728475400
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0x5dc7
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180256, 3978092028))]
+
+taposh 92
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 80
+     id        = 60050
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x836b
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40056
+        seq       = 2407433226
+        ack       = 2728475400
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xcfec
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180259, 3978092028))]
+###[ ENIP_TCP ]### 
+           command_id= RegisterSession
+           length    = 4
+           session   = 3616472542
+           status    = success
+           sender_context= 0
+           options   = 0
+###[ ENIP_RegisterSession ]### 
+              protocol_version= 1
+              options   = 0
+
+taposh 93
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 44934
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xbb93
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40056
+        dport     = EtherNet_IP_2
+        seq       = 2728475400
+        ack       = 2407433254
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978092031, 998180259))]
+
+taposh 94
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 118
+     id        = 44935
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xbb50
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40056
+        dport     = EtherNet_IP_2
+        seq       = 2728475400
+        ack       = 2407433254
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 83
+        chksum    = 0xd012
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978092033, 998180259))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 42
+           session   = 3616472542
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 26
+               |###[ CIP ]### 
+               |     direction = request
+               |     service   = Read_Tag_Fragmented_Service
+               |     \path      \
+               |     \status    \
+               |###[ CIP_ReqConnectionManager ]### 
+               |        reserved  = 0
+               |        priority  = 0
+               |        ticktime  = 2
+               |        timeout_ticks= 32
+               |        message_size= 9222
+               |        \message   \
+               |         |###[ CIP ]### 
+               |         |  direction = request
+               |         |  service   = Get_Attribute_All
+               |         |  \path      \
+               |         |  \status    \
+               |         |###[ Raw ]### 
+               |         |     load      = '\x05\\x9d\x0c\x00L\x04\\x91\x05T42:1\x00\x01\x00\x01\x00\x01\x00'
+               |        message_padding= None
+               |        route_path_size= 1
+               |        reserved2 = 0
+               |        route_path_size_port= 1
+               |        route_path_size_addr= 0
+
+taposh 95
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 60051
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x8386
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40056
+        seq       = 2407433254
+        ack       = 2728475466
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 85
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180261, 3978092033))]
+
+taposh 96
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 102
+     id        = 60052
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x8353
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40056
+        seq       = 2407433254
+        ack       = 2728475466
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 85
+        chksum    = 0xd002
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180270, 3978092033))]
+###[ ENIP_TCP ]### 
+           command_id= SendRRData
+           length    = 26
+           session   = 3616472542
+           status    = success
+           sender_context= 48
+           options   = 0
+###[ ENIP_SendRRData ]### 
+              interface_handle= 0
+              timeout   = 0
+              count     = 2
+              \items     \
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = null_address
+               |  length    = 0
+               |###[ ENIP_SendUnitData_Item ]### 
+               |  type_id   = unconn_message
+               |  length    = 10
+               |###[ CIP ]### 
+               |     direction = response
+               |     service   = Read_Tag_Service
+               |     \path      \
+               |     \status    \
+               |###[ Raw ]### 
+               |        load      = '\x00\x00\x00\\xca\x00\\x96CC@'
+
+taposh 97
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 44936
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xbb91
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40056
+        dport     = EtherNet_IP_2
+        seq       = 2728475466
+        ack       = 2407433304
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978092042, 998180270))]
+
+taposh 98
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 44937
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xbb90
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40056
+        dport     = EtherNet_IP_2
+        seq       = 2728475466
+        ack       = 2407433304
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978092047, 998180270))]
+
+taposh 99
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:02:02
+  src       = aa:bb:cc:dd:03:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 60053
+     flags     = DF
+     frag      = 0
+     ttl       = 61
+     proto     = tcp
+     chksum    = 0x8384
+     src       = 10.0.4.1
+     dst       = 192.168.1.1
+     \options   \
+###[ TCP ]### 
+        sport     = EtherNet_IP_2
+        dport     = 40056
+        seq       = 2407433304
+        ack       = 2728475467
+        dataofs   = 8
+        reserved  = 0
+        flags     = FA
+        window    = 85
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (998180275, 3978092047))]
+
+taposh 100
+###[ Ethernet ]### 
+  dst       = aa:bb:cc:dd:03:02
+  src       = aa:bb:cc:dd:02:02
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 52
+     id        = 44938
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xbb8f
+     src       = 192.168.1.1
+     dst       = 10.0.4.1
+     \options   \
+###[ TCP ]### 
+        sport     = 40056
+        dport     = EtherNet_IP_2
+        seq       = 2728475467
+        ack       = 2407433305
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 83
+        chksum    = 0xcfd0
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (3978092047, 998180275))]
+
