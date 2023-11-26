@@ -5,48 +5,18 @@ import csv
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
 
+import sys
+ 
+# setting path
+sys.path.insert(0, '/home/taposh/programming/dhal_ml')
 
-files = ['../data_processing/data/001_PLC1-eth0_ml.csv',
-         '../data_processing/data/152_PLC1-eth0_ml.csv']
+import data_processing.get_x_y
 
-xl = []
-yl = []
-"""
-for input_f in files:
-    with open(input_f) as f:
-        # Skips the heading Using next() method 
-        heading = next(f)  
-        reader = csv.reader(f)
-        for r in reader:
-            xl.append(r[:-2])
-            yl.append(r[-1])
-print(xl[0])
-"""
-for input_f in files:
-    data = pd.read_csv(input_f, dtype={'icmp': 'float64', 
-                                       'arp': 'float64', 
-                                       'enip': 'float64', 
-                                       'cip_req': 'float64', 
-                                       'cip_res': 'float64', 
-                                       'tcp_A': 'float64', 
-                                       'tcp_FPA': 'float64', 
-                                       'tcp_S': 'float64', 
-                                       'tcp_FA': 'float64', 
-                                       'tcp_R': 'float64', 
-                                       'tcp_SA': 'float64', 
-                                       'tcp_PA': 'float64', 
-                                       'tcp_NOT_TCP': 'float64',
-                                       'Y': 'Int64'})
-    for key, val in data.iterrows():
-        xl.append(val[:-2])
-        yl.append(val[-1])
-X = np.array(xl)
-Y = np.array(yl)
+X, Y = data_processing.get_x_y.get_now()
 print(X[0])
-print(type(xl[0][0]))
 print(Y[0])
 hv = X.max()
-X = X/hv
+X = X/hv # Normalize
 print(X[0])
 
 x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.25, random_state=42)
