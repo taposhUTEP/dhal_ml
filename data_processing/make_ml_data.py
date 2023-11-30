@@ -43,9 +43,9 @@ for x in conf:
             #break
             if(util.within_boundary(float(data_row[1]), end, start)):
                 indx = protocols.index(data_row[2])
-                if data_row[2] == 'tcp_R':
-                    print(data_row)
-                print(f"{data_row} -- {indx}")
+                #if data_row[2] == 'tcp_R':
+                #    print(data_row)
+                #print(f"{data_row} -- {indx}")
                 row[indx] += 1
             #print(f"{start} - {float(data_row[1])} - {end}")
         rows.append(row)

@@ -2,7 +2,9 @@ import numpy as np
 import pandas as pd
 
 files = ['../data_processing/data/001_PLC1-eth0_ml.csv',
-         '../data_processing/data/152_PLC1-eth0_ml.csv']
+         '../data_processing/data/152_PLC1-eth0_ml.csv',
+         '../data_processing/data/025_PLC1-eth0_ml.csv',
+         '../data_processing/data/050_PLC1-eth0_ml.csv']
 
 xl = []
 yl = []

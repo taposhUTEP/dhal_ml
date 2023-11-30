@@ -26,7 +26,8 @@ def get_time_windows(dt, start, end):
 #windows = get_time_windows(50, 1651626252.115359, 1651627763.617304)
 #print(windows)
 
-ts = dt_2_timestamp('2022-05-04 06:22:09.209862')
+#ts = dt_2_timestamp('2022-05-04 06:22:09.209862')
+ts = dt_2_timestamp('2022-05-03 19:04:12.115359')
 print(ts)
 print(next_step_time(ts, 50))
 print(next_step_time(ts, 50) - ts)
